@@ -13,8 +13,8 @@ public class TerminalRepository {
     private List<Pasajero> registroPasajeros;
 
     public TerminalRepository() {
-        registroBuses = new ArrayList<>();
-        registroPasajeros = new ArrayList<>();
+        this.registroBuses = new ArrayList<>(List.of());
+        this.registroPasajeros = new ArrayList<>(List.of());
     }
 
     public List<BusRepository> getRegistroBuses() {
@@ -31,5 +31,13 @@ public class TerminalRepository {
 
     public void setRegistroPasajeros(List<Pasajero> registroPasajeros) {
         this.registroPasajeros = registroPasajeros;
+    }
+
+    @Override
+    public String toString() {
+        return "TerminalRepository{" +
+                "registroBuses=" + registroBuses +
+                ", registroPasajeros=" + registroPasajeros +
+                '}';
     }
 }

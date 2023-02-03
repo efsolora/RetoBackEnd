@@ -2,6 +2,8 @@ package com.example.sofkaU.terminalDeTransporte;
 
 import com.example.sofkaU.terminalDeTransporte.Repository.BusRepository;
 import com.example.sofkaU.terminalDeTransporte.Models.Pasajero;
+import com.example.sofkaU.terminalDeTransporte.Repository.EmpresaDeTransporteRepository;
+import com.example.sofkaU.terminalDeTransporte.Repository.TerminalRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +21,7 @@ public class TerminalDeTransporteApplication {
     public Pasajero contruirPasajero() {
         return new Pasajero("Andres", 30554354, "Marinilla");
     }
+
     @Bean
     public BusRepository contruirBusRepository() {
         return new BusRepository("Andres", 30554354, "Marinilla");

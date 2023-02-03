@@ -8,8 +8,6 @@ import java.util.UUID;
 
 public class Pasajero {
 
-    @Autowired
-    EmpresaDeTransporte empresaDeTransporte;
 
     private String nombre;
     private int cc;
@@ -23,10 +21,6 @@ public class Pasajero {
         this.cc = cc;
         idPasajero = String.valueOf(UUID.randomUUID());
         this.destino = destino.toLowerCase();
-    }
-
-    public Pasajero() {
-        idPasajero = String.valueOf(UUID.randomUUID());
     }
 
 
